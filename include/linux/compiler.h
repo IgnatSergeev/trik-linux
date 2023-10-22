@@ -267,6 +267,8 @@ void ftrace_likely_update(struct ftrace_likely_data *f, int val,
 # define __UNIQUE_ID(prefix) __PASTE(__PASTE(__UNIQUE_ID_, prefix), __LINE__)
 #endif
 
+#include <uapi/linux/types.h>
+
 #define __READ_ONCE_SIZE						\
 ({									\
 	switch (size) {							\
